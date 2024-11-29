@@ -200,3 +200,50 @@ s6
 s6.remove(552)#vales provide krenge to delete
 s6
 # since no indexing in set so neither add/remove at specific postion 
+
+
+
+
+# =====================
+# .split()  to create the list from string 
+g="egg,mango,bana"
+gl = g.split(",")
+gl
+
+
+"a;b;c".split(";")
+
+
+"The quick brown fox".split()
+
+"abbaabba".split("ba")
+
+
+#check existence in list 
+"bob"  in g
+"egg" in g
+
+
+colors = ["red","yellow","green","blue"]
+colors[1:3] = ["orange","mageta","aqua","blue"]
+colors 
+
+
+colors[1:4] = ["yellow","green"]
+colors
+
+
+
+#list comprehension --short hand of for loop
+
+numbers = [1,2,3,4,5]
+squares = [num **2 for num in numbers]
+squares
+
+# List of string numbers
+str_num = ["1.3", "2.4", "5.234"]
+# Convert strings to floats and then square each number
+float_num = [float(num) ** 2 for num in str_num]
+print(float_num)
+formatted_float_num = [f"{num:.2f}" for num in float_num]
+formatted_float_num
